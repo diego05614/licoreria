@@ -8,11 +8,14 @@ const NavBar: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
+ 
+
   return (
     <nav className="bg-[#3B3F54] p-4 flex justify-around items-center text-white">
       <button
         className="bg-[#3B3F54] hover:bg-[#2B2F3E] text-white font-bold py-2 px-4 rounded"
         onClick={handleToggle}
+        
       >
         Menu
       </button>
@@ -32,6 +35,9 @@ const NavBar: React.FC = () => {
           </li>
           <li className="py-2">
             <Link to="/register-client">Register User</Link>
+          </li>
+          <li className="py-2">
+            <Link to="/cart">Cart</Link>
           </li>
         </ul>
       )}
